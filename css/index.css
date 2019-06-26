@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+#imagem:before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  filter: brightness(60%);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+img {
+  margin: 1rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+menu {
+  display: flex;
+}
+menu li {
+  list-style: none;
+  padding: 1rem;
+}
+menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.textCenter {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.redes {
+  margin-top: 5rem;
+  font-size: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.redes ul {
+  display: flex;
+  list-style: none;
+}
+
+.redes li {
+  padding: 2rem;
+}
+.redes a {
+  color: white;
+}
+
+@media all and (max-width: 1440px) {
+  .textCenter {
+    margin-top: 6em;
+  }
+  .redes {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+  .redes {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .redes {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .textCenter {
+    margin-top: 3em;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .redes li {
+    padding: 1rem;
+  }
+
+  menu {
+    font-size: .7rem;
+  }
+
+  menu li {
+    padding: .5rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+  img {
+    width: 5rem;
+  }
+
+}
+
+
+/* ----- Página de Produtos -----*/
+
+section{
+  text-align: center;
+  height: auto;
+  width: 100%;
+  background-color: #FF998F;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+section h2{ 
+  font-family: Bodoni MT; 
+  font-size: 40px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 44px;
+  background: #CCC;
+}
+
+
+.flex-container {
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h3{
+  padding: 0.5rem;
+  font-size: 15px;
+}
+
+.itens{
+  height: 350px;
+  float: left;
+  width: 20%;
+  border: 3px solid white;
+  border-radius: 10px;
+  justify-content: space-around;
+  flex: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.itens:hover{
+   background: #ededed;
+   margin: 5px;
+}
+
+.itens a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.itens img{
+   width: 170px;
+   height: 90px;
+   overflow: hidden;
+}

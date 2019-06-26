@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+}
+
+#container {
+  height: 80vh;
+  width: 90vw;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  margin-left: 8.2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.form2 {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input {
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 2px gray solid;
+  outline: 0;
+  padding-bottom: 1rem;
+  width: 27rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+.title img {
+  width: 10rem;
+  border-radius: 50%;
+}
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn1 button {
+  background-color: #a63333;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  margin-bottom: 1rem;
+}
+
+.btn1 button:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #a63333;
+  font-size: 0.7em;
+}
+
+@media (max-width: 992px) {
+  .title img {
+    width: 7rem;
+  }
+  .form input {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .form2 {
+    margin-top: 1rem;
+  }
+
+  .form input {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .title img {
+    width: 6rem;
+  }
+  .form2 {
+    margin-top: -1rem;
+  }
+
+  .form input {
+    width: 15rem;
+  }
+
+  .btn1 button  {
+    padding: 13px 29px;
+  }
+}
